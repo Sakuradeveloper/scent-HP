@@ -1,0 +1,69 @@
+/*-----------------------------
+    footerのクラス
+--------------------------------*/
+
+footer {
+  position: relative;
+  background-color: $main_color;
+  color: $base_color;
+  .footer_letter{
+    margin-left: 4.2rem;
+    h3{
+      font-size: 4.8rem;
+    }
+    p{
+      font-size: 2.8rem;
+    }
+    @include media('tb') {
+      text-align: center;
+      padding-top: 5rem;
+    }
+  }
+  .footer_content{
+    padding: 10.8rem 6.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .contact{
+      .social{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        column-gap: 2rem;
+        a{
+          display: inline-block;
+        }
+        @include media('tb') {
+          justify-content: space-around;
+          align-items: center;
+        }
+      }
+      .info{
+        margin-top: 3.2rem;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        column-gap: 5.5rem;
+      }
+    }
+    .copyright{
+      h4{
+        font-size: 4.8rem;
+        @include media('tb') {
+          text-align: center;
+        }
+      }
+      p{
+        padding-top: 8.7rem;
+      }
+    }
+    @include media('tb') {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 4rem;
+    }
+  }
+
+}

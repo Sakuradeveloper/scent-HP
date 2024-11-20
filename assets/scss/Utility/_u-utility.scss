@@ -1,0 +1,155 @@
+// pc&sp
+.pc {
+  // display: flex !important;
+}
+
+.sp {
+  // display: none !important;
+}
+
+.tc {
+  display: block !important;
+}
+
+.tb {
+  display: none !important;
+}
+
+@include media('tb') {
+  .tc {
+    display: none !important;
+  }
+
+  .tb {
+    display: block !important;
+  }
+}
+
+@include media('sp') {
+  .pc {
+    display: none !important;
+  }
+
+  .sp {
+    display: flex !important;
+  }
+}
+
+//hide
+
+@include media('pc') {
+  .pc {
+    display: flex !important;
+  }
+
+  .sp {
+    display: none !important;
+  }
+
+  .pc-hide {
+    display: none !important;
+  }
+}
+
+@include media('sp') {
+  .pc {
+    display: none !important;
+  }
+  .sp-hide {
+    display: none !important;
+  }
+}
+
+// wrapper
+#wrapper {
+  position: relative;
+  width: 100%;
+}
+
+main {
+  position: relative;
+}
+
+/* input */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"],
+select,
+textarea {
+  position: relative;
+  background-color: transparent;
+  border: 1px solid #672E2B;
+  box-sizing: border-box;
+  padding: 0.9rem 1.6rem;
+  width: 100%;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 3.0rem;
+  text-align: left;
+  color: #000000;
+  outline: none !important;
+  @include media('sp') {
+    padding: 1.2rem 1.6rem;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+  }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"],
+select {
+  height: 4.8rem;
+  @include media('sp') {
+    height: 5.6rem;
+  }
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #672E2B;
+}
+
+select {
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url(../img/select-down.svg);
+  background-position: calc(100% - 1.2rem) 50%;
+  background-size: 1.0rem 0.8rem;
+  background-repeat: no-repeat;
+  z-index: 0;
+  @include media('sp') {
+    background-position: calc(100% - 1.0rem) 50%;
+  }
+}
+
+// picture
+picture,
+figure,
+.image_wrap {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+picture img,
+figure img,
+.image_wrap img {
+  width: 100%;
+}
+
+
+

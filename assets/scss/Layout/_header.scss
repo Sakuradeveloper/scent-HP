@@ -1,0 +1,70 @@
+.header {
+  width: 100%;
+  background: transparent;
+  color: $white_color;
+  background-color: $white_color;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+
+  &-logo {
+    padding: 11px 50px 12px;
+    height: 60px;
+    @include media('sp') {
+      padding: 13px 50px 12px 0;
+    }
+    img {
+      height: 18px;
+      width: 129px;
+      // padding: 1rem;
+    }
+  }
+
+  &-content {
+    background-color: $blue_color;
+
+    &-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+
+      @include media('sp') {
+        gap: 4rem;
+      }
+
+    }
+
+    &-tit {
+      font-size: 5rem;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+      letter-spacing: 0.3rem;
+
+      @include media('sp') {
+        font-size: 3.2rem;
+      }
+    }
+
+    &-sub {
+      text-align: center;
+      font-size: 2.5rem;
+
+      @include media('sp') {
+        font-size: 1.6rem;
+      }
+    }
+
+
+    &-img {
+      height: 25rem;
+      margin-top: 3rem;
+
+      @include media('sp') {
+        height: 16rem;
+        margin-top: 1.5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+// @font-face {
+//     font-family: noto-bold;
+//     src: url('../fonts/NotoSansJP-Bold.otf');
+// }
+
+// @font-face {
+//     font-family: noto-regular;
+//     src: url('../fonts/NotoSansJP-Regular.otf');
+// }
+
+// @mixin notoSansJp($type: 'regular') {
+//     @if ($type =='bold') {
+//         font-family: noto-bold;
+//     }
+
+//     @if ($type =='regular') {
+//         font-family: noto-regular;
+//     }
+// }
+
+// @font-face {
+//     font-family: NotoSerifJP-Black;
+//     src: url('../fonts/NotoSerifJP-Black.otf');
+// }
+
+// @font-face {
+//     font-family: noto-cjk-jp;
+//     src: url('../fonts/Noto Sans Mono CJK JP Regular.otf');
+// }
+
+
+// @font-face {
+//     font-family: noto-cjk-bold;
+//     src: url('../fonts/NotoSansCJKjp-Bold.otf');
+// }
+
+// @font-face {
+//     font-family: NotoSerifJP-Bold;
+//     src: url('../fonts/NotoSerifJP-Bold.otf');
+// }
+
+// @font-face {
+//     font-family: NotoSansCJKjp-Medium;
+//     src: url('../fonts/NotoSansCJKjp-Medium.otf');
+// }
+
+// @font-face {
+//     font-family: hiragino-w3;
+//     src: url('../fonts/Hiragino Kaku Gothic ProN W3.otf');
+// }
+
+// @font-face {
+//     font-family: hiragino-w6;
+//     src: url('../fonts/Hiragino Kaku Gothic ProN W6.otf');
+// }
+
+// @font-face {
+//     font-family: shin-pro-bold;
+//     src: url('../fonts/A-OTF Shin Go Pro DB.otf');
+// }
+
+// @font-face {
+//     font-family: shin-pro;
+//     src: url('../fonts/AOTFShinGoProBold.otf');
+// }
+
+// @font-face {
+//     font-family: Outfit;
+//     src: url('../fonts/Outfit-Medium.ttf');
+// }
+
+// @font-face {
+//     font-family: Outfit-regular;
+//     src: url('../fonts/Outfit-Regular.ttf');
+// }
+
+@font-face {
+    font-family: 'TA-engeifude';
+    src: url('../fonts/46312.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Yu Mincho Light";
+    src: url('../fonts/yu-mincho-light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "KouzanBrushFontGyousyoOTF";
+    src: url('../fonts/KouzanBrushFontGyousyoOTF/KouzanBrushFontGyousyoOTF.ttf') format('truetype');
+}
